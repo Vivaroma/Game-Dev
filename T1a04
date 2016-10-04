@@ -1,0 +1,62 @@
+this is a web page<br>
+
+<div id="myQuestion">?</div>
+<input type=button value="click me" onclick="{
+document.getElementById('myQuestion').innerhtml = 'hello world' 
+}"><br>
+
+my picture<br><img src="BlueKnight.png" width=400><br>
+Image from the web<br>
+<img width=400 src="http://vignette2.wikia.nocookie.net/castlecrashers/images/9/9e/CastleCrashersScreen1.png/revision/latest/scale-to-width-down/500?cb=20120901013327">
+<a href="http://www.google.ca">http://www.google.ca</a><br>
+
+this is <b>bold</b> this is <i>italic</i> this is <b><i>both</i></b> <br>
+<br>
+<br>
+<table style ="width:100%">
+    <tr>
+        <th>The characters</th>
+        <th>The Boss</th>
+        <th>The Gameplay</th>
+    </tr>
+    <tr>
+        <td><img width=400 src="https://wallpaperscraft.com/image/castle_crashers_characters_arm_magic_graphics_21802_2048x1152.jpg"></td>
+        <td><img width=400 src="https://i.ytimg.com/vi/0rws9UQlzAU/hqdefault.jpg"></td>
+        <td><img width=400 src="http://cdn-static.denofgeek.com/sites/denofgeek/files/2/65//castle-crashers.jpg"></td>
+    </tr>
+</table>
+<br>
+<br>
+
+
+<div id ="myDiv02" style= position:relative;left:0;top:0;"><img width=40 src="Mario_8Bit.png"></div>
+
+<table style ="width:20%">
+<table border=5
+    <tr>
+        <td></td>
+        <td>
+        <input type=button value="go up" onclick="{
+        my01=document.getElementById('myDiv02')
+        my01.style.top= parseInt(my01.style.top ) - 20 +'px' 
+        }"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+        <input type=button value="go left" onclick="{
+        my01=document.getElementById('myDiv02')
+        my01.style.left= parseInt(my01.style.left ) - 20 +'px'
+        }"></td>
+        <td>
+        <input type=button value="go down" onclick="{
+        my01=document.getElementById('myDiv02')
+        my01.style.top= parseInt(my01.style.top ) + 20 +'px' 
+        }"></td>
+        
+        <td>    
+        <input type=button value="go right" onclick="{
+        my01=document.getElementById('myDiv02')
+        my01.style.left= parseInt(my01.style.left ) + 20 +'px'
+        }"></td>
+</table>

@@ -1,0 +1,165 @@
+<body>
+<h1 align = center> <font color = grey>Rock</font> Paper <font color = red>Scissor</font> <font color = green>Lizard</font> <font color = blue>Spock</font> </h1>
+<br><br>
+<table align = center>
+    
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td><input type= button value = Scissor align = center onClick ="{        
+         document.myOutcome= ' '
+        document.myRandom = Math.floor(Math.random()*5)+1
+        if (document.myRandom == 1) {
+            document.MyOutcome = 'Scissor Learns sentience and peace with Scissor'
+    }
+        if (document.myRandom == 2) {
+            document.myOutcome = 'Scissor gets Smashed by Rock'
+        }
+        if (document.myRandom == 3) {
+            document.myOutcome = 'Scissor decapitates Lizard'
+        }
+        if (document.myRandom == 4) {
+            document.myOutcome = 'Scissor gets smashed by Spock'
+        }
+        if (document.myRandom == 5) {
+            document.myOutcome = 'Scissor cuts Paper'
+        }
+        
+        
+        document.getElementById('myOut').innerHTML =
+        document.myOutcome
+    }"
+    
+     ></button> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td><input type= button value = Spock onClick  ="{        
+         document.myOutcome= ' '
+        document.myRandom = Math.floor(Math.random()*5)+1
+        if (document.myRandom == 1) {
+            document.MyOutcome = 'Spock smashes Scissors'
+    }
+        if (document.myRandom == 2) {
+            document.myOutcome = 'Spock gets disproven by Paper'
+        }
+        if (document.myRandom == 3) {
+            document.myOutcome = 'Spock vaporises Rock'
+        }
+        if (document.myRandom == 4) {
+            document.myOutcome = 'Spock gets poisoned by Lizard'
+        }
+        if (document.myRandom == 5) {
+            document.myOutcome = 'Spock stares at Spock in awkward silence'
+        }
+        
+        
+        document.getElementById('myOut').innerHTML =
+        document.myOutcome
+    }"
+        
+        ></button></td>
+        <td></td>
+        <td><img id = "MyRules" src = 102.jpg width = 450px hight = 450px ></td>
+        <td></td>
+        <td><input type = button value = Paper onClick ="{        
+         document.myOutcome= ' '
+        document.myRandom = Math.floor(Math.random()*5)+1
+        if (document.myRandom == 1) {
+            document.MyOutcome = 'Paper covers Rock'
+    }
+        if (document.myRandom == 2) {
+            document.myOutcome = 'Paper gets eaten by Lizard'
+        }
+        if (document.myRandom == 3) {
+            document.myOutcome = 'Paper disproves Spock'
+        }
+        if (document.myRandom == 4) {
+            document.myOutcome = 'Paper gets cut by Scissors'
+        }
+        if (document.myRandom == 5) {
+            document.myOutcome = 'Paper hugs Paper in peace'
+        }
+        
+        
+        document.getElementById('myOut').innerHTML =
+        document.myOutcome
+    }"
+        
+        ></button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type = button value = Lizard onClick  ="{        
+         document.myOutcome= ' '
+        document.myRandom = Math.floor(Math.random()*5)+1
+        if (document.myRandom == 1) {
+            document.MyOutcome = 'Lizard poisons Spock'
+    }
+        if (document.myRandom == 2) {
+            document.myOutcome = 'Lizard gets decapitated by Scissor'
+        }
+        if (document.myRandom == 3) {
+            document.myOutcome = 'Lizard eats Paper'
+        }
+        if (document.myRandom == 4) {
+            document.myOutcome = 'Lizard gets crushed by Rock'
+        }
+        if (document.myRandom == 5) {
+            document.myOutcome = 'Lizard mates with Lizard'
+        }
+        
+        
+        document.getElementById('myOut').innerHTML =
+        document.myOutcome
+    }"
+        
+        
+        ></button></td>
+        <td></td>
+        <td><input type = button value = Rock onClick ="{        
+         document.myOutcome= ' '
+        document.myRandom = Math.floor(Math.random()*5)+1
+        if (document.myRandom == 1) {
+            document.MyOutcome = 'Rock crushes Lizard'
+    }
+        if (document.myRandom == 2) {
+            document.myOutcome = 'Rock gets Vapourized by Spock'
+        }
+        if (document.myRandom == 3) {
+            document.myOutcome = 'Rock Crushes Scissor'
+        
+        }
+        if (document.myRandom == 4) {
+            document.myOutcome = 'Rock gets Covered by Paper'
+        }
+        if (document.myRandom == 5) {
+            document.myOutcome = 'Rock is friendly greeted by Rock'
+        }
+        
+        
+        document.getElementById('myOut').innerHTML =
+        document.myOutcome
+    }"
+        ></button> </td>
+        <td></td>
+    </tr>
+</table>
+
+
+<div id="myOut">Output here</div>
+<br><br><br>
+
+<table align = center border = 3 >
+    <tr>
+        <td> wins </td>
+        <td> Losses </td>
+    </tr>
+    <tr>
+        <td><div2 id = "myWins">your wins</div2></td>
+        <td><div3 id = "myLoss">your loss</div3></td>
+        
+    </tr>
+</table>
+</body>

@@ -1,0 +1,45 @@
+<body background = "http://weknowyourdreams.com/images/desert/desert-07.jpg"></body>
+<h1 align=center> T1A12-Interval by Dillan</h1>
+<script>
+function myFunction01(){
+    document.getElementById('myDiv1').style.left = 
+    parseInt(document.getElementById('myDiv1').style.left) + 5 + 'px'
+}    
+</script>
+
+
+
+
+"
+
+<input type=button value=move onclick="{
+  myFunction01()
+}">
+
+
+<input type=button value="show left" onclick="{
+  alert(document.getElementById('myDiv1').style.left)
+}">
+
+
+<input type=button value="setTimeout" onclick="{
+  document.myTime01 = setTimeout('myFunction01()', 500)
+}">
+
+
+<input type=button value="setInterval" onclick="{
+document.myinterval = setInterval('myFunction01()',10)
+ 
+}">
+
+
+<input type=button value="clearInterval" onclick="{
+  clearInterval(document.myinterval)
+}">
+
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="myDiv1" style="position:relative; left:0; top:0">
+   <img src ="http://rs705.pbsrc.com/albums/ww58/MontrealTexas/Speedy%20Gonzales/Speedy10.gif~c200" width = 50 height = 50>
+</div>

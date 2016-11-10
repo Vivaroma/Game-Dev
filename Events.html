@@ -1,0 +1,51 @@
+<body></body><h1 align=center><font size=20> Events by Dillan</font></h1>
+<br>
+This is <b>bold </b>this isn't
+<br>on key up<br>
+<body> <input type = text id = 'dear' onkeyup= "myFunction()"><br>
+on key down <br>
+<input type = text id ='dear2' onkeydown ="mySecFunction()"><br><br>
+<h2 onclick="showCoords(event)"> <img id="myImage" src="BlueKnight.png" height="200" width="200"></h2>
+  <p><strong>Tip:</strong> Try to click different places in the picture.</p>
+
+<p id="demo"></p>
+    <br><br><br><br><br><br>
+    <p>Move the mouse pointer over this paragraph.</p>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   
+    <script> 
+    function myFunction() {
+    var x = document.getElementById("dear");
+    x.value = x.value.toUpperCase();
+}
+function mySecFunction(){
+    var y =document.getElementById("dear2");
+    y.value = y.value.toUpperCase();
+}
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = coords;
+}
+
+$(document).ready(function(){
+    $("p").mouseover(function(){
+        $("p").css("background-color", "yellow");
+    });
+    $("p").mouseout(function(){
+        $("p").css("background-color", "lightgray");
+    });
+});
+
+    </script>
+    </body
